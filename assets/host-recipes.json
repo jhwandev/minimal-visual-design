@@ -1,0 +1,136 @@
+{
+  "checked_on": "2026-11-04",
+  "note": "Fictional fixtures for optional native renderers. Read the environment’s current Visualize skill for supported versions and APIs. These are data fixtures, not bundled host components.",
+  "calendar": {
+    "native_element": "viz-calendar",
+    "fallback_pattern": "calendar-day",
+    "verified_native_this_session": true,
+    "date": "2026-11-04",
+    "timeZone": "Asia/Seoul",
+    "events": [
+      {
+        "title": "자료 검토 · 예시",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "title": "시각화 제작 · 예시",
+        "start": "11:30",
+        "end": "13:00"
+      },
+      {
+        "title": "디자인 비교 · 예시",
+        "start": "14:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  "waterfall": {
+    "native_element": "viz-waterfall",
+    "fallback_pattern": "request-waterfall",
+    "verified_native_this_session": false,
+    "spans": [
+      {
+        "id": "http",
+        "name": "HTTP",
+        "startMs": 0,
+        "durationMs": 120
+      },
+      {
+        "id": "sql",
+        "name": "SQL",
+        "parentId": "http",
+        "startMs": 10,
+        "durationMs": 80
+      },
+      {
+        "id": "cache",
+        "name": "Cache",
+        "parentId": "http",
+        "startMs": 20,
+        "durationMs": 15
+      }
+    ]
+  },
+  "flame_chart": {
+    "native_element": "viz-flame-chart",
+    "fallback_pattern": "flame-chart",
+    "verified_native_this_session": false,
+    "frames": [
+      {
+        "id": "render",
+        "name": "render"
+      },
+      {
+        "id": "layout",
+        "name": "layout"
+      },
+      {
+        "id": "paint",
+        "name": "paint"
+      }
+    ],
+    "samples": [
+      {
+        "stack": [
+          "render",
+          "layout"
+        ],
+        "durationMs": 1
+      },
+      {
+        "stack": [
+          "render",
+          "layout"
+        ],
+        "durationMs": 1
+      },
+      {
+        "stack": [
+          "render"
+        ],
+        "durationMs": 1
+      },
+      {
+        "stack": [
+          "render",
+          "paint"
+        ],
+        "durationMs": 1
+      },
+      {
+        "stack": [],
+        "durationMs": 1
+      }
+    ]
+  },
+  "stack_trace": {
+    "native_element": "viz-stack-trace",
+    "fallback_pattern": "stack-trace",
+    "verified_native_this_session": false,
+    "error": {
+      "name": "KeyError",
+      "message": "total"
+    },
+    "frames": [
+      {
+        "name": "order_total",
+        "file": "orders.py",
+        "line": 2,
+        "column": 12,
+        "source": {
+          "startLine": 2,
+          "lines": [
+            "return order['total']"
+          ]
+        }
+      },
+      {
+        "name": "show_order",
+        "file": "orders.py",
+        "line": 5,
+        "column": 12
+      }
+    ]
+  }
+}

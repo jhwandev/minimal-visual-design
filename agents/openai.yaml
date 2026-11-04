@@ -1,0 +1,4 @@
+interface:
+  display_name: "Minimal Visual Design"
+  short_description: "내용에 맞는 패턴을 고르는 반응형 HTML·SVG 시각화 스킬"
+  default_prompt: "$minimal-visual-design을 사용해 이 내용을 적합한 시각화 패턴으로 구성한 독립형 HTML로 만들어 줘."

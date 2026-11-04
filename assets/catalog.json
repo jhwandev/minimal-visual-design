@@ -1,0 +1,387 @@
+[
+  {
+    "id": "comparison",
+    "name": "비교 카드",
+    "category": "비교",
+    "cue": "2–3개 대상의 핵심 차이",
+    "guardrail": "공통 비교 기준을 유지한다. 수치를 일반적 사실로 바꾸지 않는다."
+  },
+  {
+    "id": "comparison-table",
+    "name": "속성 비교표",
+    "category": "비교",
+    "cue": "대상이 많거나 정확한 속성 비교",
+    "guardrail": "미확인 셀을 빈 점수나 임의 평가로 채우지 않는다."
+  },
+  {
+    "id": "process",
+    "name": "직렬 프로세스",
+    "category": "흐름",
+    "cue": "선후 관계가 있는 단계",
+    "guardrail": "조건 분기를 직선으로 숨기지 않는다."
+  },
+  {
+    "id": "swimlane",
+    "name": "역할별 스윔레인",
+    "category": "흐름",
+    "cue": "병렬 업무와 인계",
+    "guardrail": "시간 순서와 역할 구분을 혼동하지 않는다."
+  },
+  {
+    "id": "timeline",
+    "name": "이벤트 타임라인",
+    "category": "시간",
+    "cue": "사건과 날짜의 순서",
+    "guardrail": "날짜가 없는 항목에 임의 날짜를 붙이지 않는다."
+  },
+  {
+    "id": "roadmap",
+    "name": "단계 로드맵",
+    "category": "시간",
+    "cue": "정확한 날짜 없이 미래 단계",
+    "guardrail": "확정된 일정처럼 표현하지 않는다."
+  },
+  {
+    "id": "hierarchy",
+    "name": "계층·조직도",
+    "category": "관계",
+    "cue": "단일 부모 구조",
+    "guardrail": "다중 소속이나 순환은 네트워크로 전환한다."
+  },
+  {
+    "id": "network",
+    "name": "관계 네트워크",
+    "category": "관계",
+    "cue": "순환·다대다 관계",
+    "guardrail": "방향과 관계 유형을 텍스트로 설명한다."
+  },
+  {
+    "id": "matrix",
+    "name": "2×2 매트릭스",
+    "category": "비교",
+    "cue": "두 개의 정성적 기준으로 분류",
+    "guardrail": "정성 위치를 수치 좌표처럼 해석하지 않는다."
+  },
+  {
+    "id": "decision-tree",
+    "name": "의사결정 트리",
+    "category": "관계",
+    "cue": "조건에 따른 경로",
+    "guardrail": "각 분기 조건과 결과를 명시한다."
+  },
+  {
+    "id": "kpi",
+    "name": "핵심 지표",
+    "category": "데이터",
+    "cue": "현재 값과 기준 비교",
+    "guardrail": "분모·기간·목표를 표시한다."
+  },
+  {
+    "id": "bar-chart",
+    "name": "막대 차트",
+    "category": "데이터",
+    "cue": "범주별 규모 비교",
+    "guardrail": "길이는 0에서 시작하며 공통 척도를 쓴다."
+  },
+  {
+    "id": "line-chart",
+    "name": "추이 차트",
+    "category": "데이터",
+    "cue": "같은 지표의 시간 변화",
+    "guardrail": "불규칙 시간 간격은 실제 비율로 배치한다."
+  },
+  {
+    "id": "stacked-bar",
+    "name": "구성비 차트",
+    "category": "데이터",
+    "cue": "전체 안의 비중",
+    "guardrail": "구성 합계와 분모를 공개한다."
+  },
+  {
+    "id": "dashboard",
+    "name": "복합 대시보드",
+    "category": "데이터",
+    "cue": "요약과 상세를 함께 감시",
+    "guardrail": "서로 다른 단위와 기간을 섞어 합산하지 않는다."
+  },
+  {
+    "id": "step-guide",
+    "name": "단계별 안내",
+    "category": "흐름",
+    "cue": "실제로 수행할 작업",
+    "guardrail": "각 단계에 행동과 확인할 결과를 함께 둔다."
+  },
+  {
+    "id": "architecture",
+    "name": "시스템 아키텍처",
+    "category": "관계",
+    "cue": "경계·구성요소·접속",
+    "guardrail": "실제 보안이나 신뢰 경계를 임의로 주장하지 않는다."
+  },
+  {
+    "id": "gantt",
+    "name": "간트 일정",
+    "category": "시간",
+    "cue": "기간과 겹침",
+    "guardrail": "상대 주차 또는 날짜 기준과 종료 포함 여부를 명시한다."
+  },
+  {
+    "id": "card-grid",
+    "name": "카드 그리드",
+    "category": "탐색",
+    "cue": "동등한 항목 둘러보기",
+    "guardrail": "동등 항목의 제목과 설명 위계를 맞춘다."
+  },
+  {
+    "id": "data-table",
+    "name": "정확한 데이터 표",
+    "category": "데이터",
+    "cue": "정확한 값과 예외 조회",
+    "guardrail": "행·열 헤더와 단위를 제공한다."
+  },
+  {
+    "id": "infographic",
+    "name": "정보 요약",
+    "category": "서사",
+    "cue": "소수의 연결된 핵심 메시지",
+    "guardrail": "출처 없는 거대 숫자와 단정적 인과를 피한다."
+  },
+  {
+    "id": "tabs",
+    "name": "키보드 탭",
+    "category": "탐색",
+    "cue": "몇 가지 독립 보기",
+    "guardrail": "JS 없이 모든 패널을 읽을 수 있어야 한다."
+  },
+  {
+    "id": "filter-list",
+    "name": "검색·필터 목록",
+    "category": "탐색",
+    "cue": "여러 항목에서 조건 검색",
+    "guardrail": "결과 수와 빈 상태, 초기화를 제공한다."
+  },
+  {
+    "id": "accordion",
+    "name": "접이식 설명",
+    "category": "탐색",
+    "cue": "필수 개요 뒤의 선택 상세",
+    "guardrail": "핵심 경고와 결과를 접힌 영역에만 두지 않는다."
+  },
+  {
+    "id": "kanban",
+    "name": "상태 보드",
+    "category": "흐름",
+    "cue": "작업의 현재 상태",
+    "guardrail": "열 위치를 일정이나 우선순위로 오해하지 않게 한다."
+  },
+  {
+    "id": "funnel",
+    "name": "전환 퍼널",
+    "category": "데이터",
+    "cue": "동일 코호트의 단계별 잔존",
+    "guardrail": "각 단계 분모와 코호트를 고정한다."
+  },
+  {
+    "id": "heatmap",
+    "name": "값이 보이는 히트맵",
+    "category": "데이터",
+    "cue": "두 범주의 값 강도 비교",
+    "guardrail": "색 범례와 정확한 수치를 함께 둔다."
+  },
+  {
+    "id": "scatter-chart",
+    "name": "산점도",
+    "category": "데이터",
+    "cue": "두 수치의 관계 탐색",
+    "guardrail": "상관관계를 인과관계로 단정하지 않는다."
+  },
+  {
+    "id": "histogram",
+    "name": "히스토그램",
+    "category": "데이터",
+    "cue": "수치의 구간별 분포",
+    "guardrail": "구간 경계와 빈도를 공개한다."
+  },
+  {
+    "id": "scorecard",
+    "name": "근거 기반 평가표",
+    "category": "비교",
+    "cue": "명시한 기준으로 후보 평가",
+    "guardrail": "점수 근거가 없다면 점수를 만들지 않는다."
+  },
+  {
+    "id": "sequence",
+    "name": "상호작용 시퀀스",
+    "category": "관계",
+    "cue": "순서에 따른 주체 간 메시지",
+    "guardrail": "각 메시지의 방향과 시점을 명시한다."
+  },
+  {
+    "id": "dataflow",
+    "name": "데이터 흐름",
+    "category": "관계",
+    "cue": "입력·변환·출력",
+    "guardrail": "데이터 변환과 제어 흐름을 구분한다."
+  },
+  {
+    "id": "evidence",
+    "name": "주장과 근거",
+    "category": "서사",
+    "cue": "결론과 증거·한계 연결",
+    "guardrail": "반대 근거와 불확실성을 누락하지 않는다."
+  },
+  {
+    "id": "editorial",
+    "name": "에디토리얼 설명",
+    "category": "서사",
+    "cue": "긴 논리와 배경 설명",
+    "guardrail": "문장을 잘게 쪼개 불필요한 카드로 만들지 않는다."
+  },
+  {
+    "id": "checklist",
+    "name": "검토 체크리스트",
+    "category": "흐름",
+    "cue": "완료 조건을 하나씩 확인",
+    "guardrail": "상태를 색상만으로 표시하지 않는다."
+  },
+  {
+    "id": "scenario-simulator",
+    "name": "부하 시나리오 실험",
+    "category": "실험",
+    "cue": "입력 조건에 따라 결과가 변함",
+    "guardrail": "단순 모델과 실제 시스템 예측을 구분한다."
+  },
+  {
+    "id": "sensitivity",
+    "name": "민감도 분석",
+    "category": "실험",
+    "cue": "한 변수 변화가 결과에 주는 영향",
+    "guardrail": "모형 범위와 손익 기준을 공개한다."
+  },
+  {
+    "id": "calculator",
+    "name": "입력·계산·검증",
+    "category": "실험",
+    "cue": "단순 계산을 직접 조절",
+    "guardrail": "숫자와 단위 검증 후 계산한다."
+  },
+  {
+    "id": "interactive-series",
+    "name": "다중 시리즈 탐색",
+    "category": "탐색",
+    "cue": "추이 비교와 시리즈 선택",
+    "guardrail": "숨긴 시리즈를 표시하고 원본 값은 유지한다."
+  },
+  {
+    "id": "sortable-table",
+    "name": "정렬 가능한 표",
+    "category": "탐색",
+    "cue": "많은 행의 정량 순위 조회",
+    "guardrail": "숫자 정렬과 현재 순서를 명시한다."
+  },
+  {
+    "id": "drilldown",
+    "name": "선택·상세 탐색",
+    "category": "탐색",
+    "cue": "요약 항목을 골라 근거 확인",
+    "guardrail": "선택 결과와 돌아오는 동선을 명확히 한다."
+  },
+  {
+    "id": "time-scrubber",
+    "name": "시간 탐색 슬라이더",
+    "category": "시간",
+    "cue": "시점에 따라 상태를 확인",
+    "guardrail": "관측되지 않은 중간 값을 실제 데이터처럼 만들지 않는다."
+  },
+  {
+    "id": "stepper",
+    "name": "실행형 단계 안내",
+    "category": "흐름",
+    "cue": "한 단계씩 수행하며 확인",
+    "guardrail": "이전과 다음 탐색, 전체 내용 대체 표시를 제공한다."
+  },
+  {
+    "id": "calendar-day",
+    "name": "하루 일정",
+    "category": "시간",
+    "cue": "시각과 기간이 있는 일정",
+    "guardrail": "현지 시간대와 날짜, 겹침을 보존한다."
+  },
+  {
+    "id": "calendar-month",
+    "name": "월간 캘린더",
+    "category": "시간",
+    "cue": "날짜별 일정을 탐색",
+    "guardrail": "달의 실제 요일 배치와 날짜를 계산한다."
+  },
+  {
+    "id": "request-waterfall",
+    "name": "요청 시간 워터폴",
+    "category": "진단",
+    "cue": "중첩 작업의 시작과 지속시간",
+    "guardrail": "겹친 자식 시간의 합을 부모 시간에서 단순 차감하지 않는다."
+  },
+  {
+    "id": "flame-chart",
+    "name": "샘플 CPU 플레임 차트",
+    "category": "진단",
+    "cue": "시간에 따른 호출 스택",
+    "guardrail": "샘플 추정치와 실제 호출 시간을 구분한다."
+  },
+  {
+    "id": "stack-trace",
+    "name": "오류 스택 추적",
+    "category": "진단",
+    "cue": "오류 원인과 호출 순서 설명",
+    "guardrail": "원본 오류와 소스 위치를 보존하고 추정 원인을 구분한다."
+  },
+  {
+    "id": "waterfall-change",
+    "name": "증감 워터폴",
+    "category": "데이터",
+    "cue": "초기 값에서 변화의 합을 추적",
+    "guardrail": "변화 누계와 최종 값이 일치해야 한다."
+  },
+  {
+    "id": "treemap",
+    "name": "면적 비중 트리맵",
+    "category": "데이터",
+    "cue": "양의 값으로 전체 내 규모 비교",
+    "guardrail": "면적이 값에 비례하고 0·음수는 별도로 처리한다."
+  },
+  {
+    "id": "sankey",
+    "name": "가중 흐름 도식",
+    "category": "관계",
+    "cue": "입력량이 여러 경로로 나뉨",
+    "guardrail": "노드별 유입·유출을 보존하고 단위를 통일한다."
+  },
+  {
+    "id": "box-plot",
+    "name": "상자 수염 그림",
+    "category": "데이터",
+    "cue": "중앙값·사분위와 범위 비교",
+    "guardrail": "사분위 계산 방법과 수염 정의를 원자료와 함께 명시한다."
+  },
+  {
+    "id": "small-multiples",
+    "name": "공통 척도 소형 차트",
+    "category": "데이터",
+    "cue": "여러 집단의 같은 지표 비교",
+    "guardrail": "모든 소형 차트에서 같은 척도와 기간을 유지한다."
+  },
+  {
+    "id": "illustrated-walkthrough",
+    "name": "화면 흐름 일러스트",
+    "category": "서사",
+    "cue": "화면의 단서와 진행 순서를 함께 설명",
+    "guardrail": "실제로 눌러야 할 버튼과 설명용 그림을 혼동하지 않게 한다."
+  },
+  {
+    "id": "set-membership",
+    "name": "집합과 교집합",
+    "category": "관계",
+    "cue": "소속과 겹치는 구성원 확인",
+    "guardrail": "모든 요소의 소속을 명시하고 면적을 수량처럼 해석하지 않는다."
+  }
+]
